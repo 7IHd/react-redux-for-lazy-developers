@@ -127,18 +127,36 @@ npm install formik --save
 # CSS Modules
 Read [this](https://blog.pusher.com/css-modules-react/)
 
+# Styled components
+```
+npm install --save styled-components
+```
+
+Read [formik and styled components](https://medium.com/teamsubchannel/react-formik-styled-components-add78b37971f).
+
+When you’re importing an existing component, you want to put it in parenthesis. :)
+```jsx
+const Input = styled(Field)``;
+```
+
+
+
 # File Naming
 Name your file the same as the thing you’re exporting from that file.
 
 This makes it easier to identify the file within your editor as opposed to having a bunch of tabs that say index.js or style.css.
 
 
-# Helpful Link
-No bueno! [Part 1](https://hackernoon.com/react-redux-for-lazy-developers-b551f16a456f)
-[Hyphens: No Guarantee](https://unix.stackexchange.com/questions/168221/are-there-problems-with-hyphens-in-functions-aliases-and-executables)
-[8 npm tricks](https://medium.freecodecamp.org/8-npm-tricks-you-can-use-to-impress-your-colleagues-dbdae1ef5f9e)
-[Introducing jsx](https://reactjs.org/docs/introducing-jsx.html)
-[So long jsx](https://github.com/facebook/create-react-app/issues/87#issuecomment-234627904)
-[formik](https://jaredpalmer.com/formik/docs/overview)
-[The 100% correct way to structure a react app or why there's no such thing](https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed)
-[CSS modules](https://blog.pusher.com/css-modules-react/)
+# Helpful Links
+* No bueno! [Part 1](https://hackernoon.com/react-redux-for-lazy-developers-b551f16a456f)
+* [Hyphens: No Guarantee](https://unix.stackexchange.com/questions/168221/are-there-problems-with-hyphens-in-functions-aliases-and-executables)
+* [8 npm tricks](https://medium.freecodecamp.org/8-npm-tricks-you-can-use-to-impress-your-colleagues-dbdae1ef5f9e)
+* [Introducing jsx](https://reactjs.org/docs/introducing-jsx.html)
+* [So long jsx](https://github.com/facebook/create-react-app/issues/87#issuecomment-234627904)
+* [formik](https://jaredpalmer.com/formik/docs/overview)
+* [The 100% correct way to structure a react app or why there's no such thing](https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed)
+* [CSS modules](https://blog.pusher.com/css-modules-react/)
+* [Formik and styled components](https://medium.com/teamsubchannel/react-formik-styled-components-add78b37971f)
+* [Getting started with styled components](https://medium.com/styled-components/styled-components-getting-started-c9818acbcbbd)
+* [Formik and Redux](https://github.com/jaredpalmer/formik/issues/265)
+* [React Redux Axios Tutorial](https://appdividend.com/2018/06/15/react-redux-axios-tutorial-example)

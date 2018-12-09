@@ -1,6 +1,8 @@
 // Render Prop
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import SubmitButton from "../../Button/SubmitButton";
+import EmailField from "../../Field/EmailField";
 
 const Basic = () => (
     <div>
@@ -27,13 +29,10 @@ const Basic = () => (
         >
             {({ isSubmitting }) => (
                 <Form>
-                    <Field type="email" name="email" />
-                    <ErrorMessage name="email" component="div" />
+                    <EmailField/>
                     <Field type="password" name="password" />
                     <ErrorMessage name="password" component="div" />
-                    <button type="submit" disabled={isSubmitting}>
-                        Submit
-                    </button>
+                    <SubmitButton disabled={isSubmitting}/>
                 </Form>
             )}
         </Formik>
