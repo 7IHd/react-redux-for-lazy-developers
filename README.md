@@ -146,7 +146,6 @@ Name your file the same as the thing you’re exporting from that file.
 
 This makes it easier to identify the file within your editor as opposed to having a bunch of tabs that say index.js or style.css.
 
-
 # Helpful Links
 * No bueno! [Part 1](https://hackernoon.com/react-redux-for-lazy-developers-b551f16a456f)
 * [Hyphens: No Guarantee](https://unix.stackexchange.com/questions/168221/are-there-problems-with-hyphens-in-functions-aliases-and-executables)
@@ -160,3 +159,4 @@ This makes it easier to identify the file within your editor as opposed to havin
 * [Getting started with styled components](https://medium.com/styled-components/styled-components-getting-started-c9818acbcbbd)
 * [Formik and Redux](https://github.com/jaredpalmer/formik/issues/265)
 * [React Redux Axios Tutorial](https://appdividend.com/2018/06/15/react-redux-axios-tutorial-example)
+* [Redux Glossary](https://github.com/reduxjs/redux/blob/master/docs/Glossary.md)
