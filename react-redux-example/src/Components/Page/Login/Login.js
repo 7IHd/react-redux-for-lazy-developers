@@ -4,9 +4,9 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import SubmitButton from "../../Button/SubmitButton";
 import EmailField from "../../Field/EmailField";
 
-const Basic = () => (
+const Login = () => (
     <div>
-        <h1>Any place in your app!</h1>
+        <h1>Sign In</h1>
         <Formik
             initialValues={{ email: '', password: '' }}
             validate={values => {
@@ -39,4 +39,4 @@ const Basic = () => (
     </div>
 );
 
-export default Basic;
+export default Login;

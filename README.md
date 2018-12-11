@@ -1,4 +1,16 @@
-# React - Redux for lazy developers :smile:
+# Keep in mind
+Originally, this repo was solely based off of the post: [Part 1 - React - Redux for Lazy Developers](https://hackernoon.com/react-redux-for-lazy-developers-b551f16a456f).
+
+But, some of the stuff within in the post didn't seem right and it seemed to be a sales pitch for the author's redux library. 
+
+So, I turned my attention away from that post and kept digging. 
+
+As oppose to creating several other repos, I just continued compiling my notes within this repo.
+
+I may change the name of this repo, I may not. :smile:
+
+# React - Redux for lazy developers
+
 Working with redux within a react app can be time consuming.
 
 Action types, action creators, reducers and so on require a lot of hand holding.
@@ -40,6 +52,8 @@ Select `start` after running `ntl`.
 To get started, we'll need to edit `src/App.js` and save to reload.
 
 # App Structure
+This post is super helpful: [The 100% correct way to structure a react app or why there's no such thing](https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed).
+                           
 We need to research the app structure and add redux.
 
 ```
@@ -139,12 +153,29 @@ When you’re importing an existing component, you want to put it in parenthesis
 const Input = styled(Field)``;
 ```
 
-
-
 # File Naming
 Name your file the same as the thing you’re exporting from that file.
 
 This makes it easier to identify the file within your editor as opposed to having a bunch of tabs that say index.js or style.css.
+
+# React Scoreboard
+* Passing in outside values into a React component
+* Binding click handler
+* Constructor and super to make `this` available
+* `setState` method
+
+# Webpack
+* Dev server - bundle and recompile
+
+# Add some more dependencies
+```
+npm i debug ejs express morgan --save
+```
+
+# Add some more dev dependencies
+```
+npm i axios babel-core babel-loader babel-preset-env babel-preset-es2015 babel-preset-react concurrently lodash.debounce prop-types webpack --save-dev
+```
 
 # Helpful Links
 * No bueno! [Part 1](https://hackernoon.com/react-redux-for-lazy-developers-b551f16a456f)
