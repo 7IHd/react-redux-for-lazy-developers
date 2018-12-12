@@ -15,7 +15,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start-webpack": "concurrently \"npm run server\" \"npm run webpack\" ",
+    "server": "node ./server/app.js",
     "build": "react-scripts build",
+    "build-webpack": "webpack -p",
+    "webpack": "webpack -w",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src",
