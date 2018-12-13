@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Login from '../Page/Login/Login';
 import ScoreBoard from '../Page/ScoreBoard/ScoreBoard';
+import FeesTable from '../Page/Conversion/FeesTable/FeesTable';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         </header>
         <Login />
         <ScoreBoard teamName="Eagles"/>
+        <FeesTable />
       </div>
     );
   }
