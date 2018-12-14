@@ -42,7 +42,7 @@ class Conversion extends Component {
         return (
             <div>
                 {errorMsg}
-                <label>Covnert</label>
+                <label>Convert</label>
                 <input className="amount-field" />
             </div>
         )
