@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import debounce from "lodash.debounce";
 
 FeesTable.propTypes = {
     conversionRate: PropTypes.number.isRequired,
     originCurrency: PropTypes.string.isRequired,
     total: PropTypes.number.isRequired,
     destinationCurrency: PropTypes.string.isRequired
-}
+};
 
 class Conversion extends Component {
     constructor(props) {
@@ -14,12 +15,12 @@ class Conversion extends Component {
             originAmount: '0.00',
             originCurrency: 'USD',
             destinationAmount: '0.00',
-            destinationCurrency: 'EUR'
+            destinationCurrency: 'EUR',
             feeAmount: 0.00,
             conversionRate: 1.5,
             totalCost: 0.00,
             errorMsg: ''
-        }
+        };
 
         // bind event listeners to 'this' will be available in the handlers
         this.handleOriginAmountChange = this.handleOriginAmountChange.bind(this);
@@ -30,9 +31,13 @@ class Conversion extends Component {
     }
 
     componentDidMount() {
-        // Add a debounced version of )getDestinationAmount() so we avoid server & UI thrashing
+        // Add a debounced version of _getDestinationAmount() so we avoid server & UI Thrashing.
+        // See http://stackoverflow.com/questions/23123138/perform-debounce-in-react-js/28046731#28046731
+        this.makeConversionAjaxCall = debounce(this._makeConversionAjaxCall, 350);
+        this.makeFeeAjaxCall = debounce(this._makeFeeAjaxCall, 350);
 
-    }
+        this.originAmountInput.focus();
+    };
 
     render() {
         if (this.state.errorMsg) {
@@ -46,7 +51,7 @@ class Conversion extends Component {
                 <input className="amount-field" />
             </div>
         )
-    }
+    };
 }
 
 export default Conversion;
